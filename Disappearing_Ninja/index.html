@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Ninja</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(".ninja").click(function () {
+                $(this).hide();
+            });
+
+            $("#btn").click(function() {
+                $(".ninja").show();
+            });
+           
+        });
+    </script>
+
+
+
+    <style type="text/css">
+    #ninjas{
+        display: inline-block;
+   
+    }
+    .ninja{
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        border: 1px solid black;
+    }
+    #btn{
+        position:absolute;
+        bottom: 10px;
+        color: white;
+        background-color: green;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div id="ninjas">
+        <img class="ninja" src="ninja1.png">
+        <img class="ninja" src="ninja2.png">
+        <img class="ninja" src="ninja3.png">
+        <img class="ninja" src="ninja4.png">
+        <img class="ninja" src="ninja5.png">
+        <img class="ninja" src="ninja6.png">
+        <img class="ninja" src="ninja7.png">
+        <img class="ninja" src="ninja8.png">
+    </div>
+    <div class="btm">
+    <button id = "btn">Restore</button>
+    </div>
+</body>
+</html>
