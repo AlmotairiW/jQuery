@@ -1,0 +1,26 @@
+.red{
+    background-color: red;
+}
+#tgImg {
+    height: 100px;
+    width: 100px;
+}
+#stgImg {
+    height: 100px;
+    width: 100px;
+}
+#fadeIn{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: none;
+}
+#spn-fadIn{
+    color: red;
+    cursor: pointer;
+}
+
+#spn-fadeOut{
+    color: red;
+    cursor: pointer;
+}
