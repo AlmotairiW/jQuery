@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover In/Out</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $(".ninjas img").hover(function(){
+                var temp = $(this).attr("src")
+                $(this).attr("src",  $(this).attr("alt-src"));
+                $(this).attr("alt-src", temp);
+            }, function(){
+                var temp = $(this).attr("src")
+                $(this).attr("src", $(this).attr("alt-src"));
+                $(this).attr("alt-src", temp);
+            });
+        });
+        
+    </script>
+
+    <style type="text/css">
+
+    .ninjas img{
+        display: inline-block;
+        padding: 50px;
+        border: 1px solid black;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="ninjas">
+        <img src="img/down1.png" alt-src = "img/down2.png">
+        <img src="img/top1.png" alt-src = "img/top2.png">
+        <img src="img/right1.png" alt-src = "img/right2.png">
+        <img src="img/left1.png" alt-src = "img/left2.png">
+    </div>
+    
+</body>
+</html>
